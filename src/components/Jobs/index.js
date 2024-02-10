@@ -286,7 +286,7 @@ class Jobs extends Component {
                   className="search-button-container-desktop"
                   onClick={this.getJobs}
                 >
-                  <BsSearch className="search-icon-desktop" />
+                  <BsSearch className="search-icon-desktop" />.
                 </button>
               </div>
               {this.renderAllJobs()}
