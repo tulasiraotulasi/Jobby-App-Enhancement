@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 class Login extends Component {
-  state = {username: 'raja', password: 'raja@2021', showSubmitError: false, errorMsg: ''}
+  state = {username: '', password: '', showSubmitError: false, errorMsg: ''}
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
@@ -68,7 +68,7 @@ class Login extends Component {
               value={username}
               className="username-input-field"
               onChange={this.onChangeUsername}
-              placeholder="Username"
+              placeholder="Username : raja"
             />
           </div>
           <div className="input-container">
@@ -81,7 +81,7 @@ class Login extends Component {
               value={password}
               className="password-input-field"
               onChange={this.onChangePassword}
-              placeholder="Password"
+              placeholder="Password : raja@2021"
             />
           </div>
           <button type="submit" className="login-button">
